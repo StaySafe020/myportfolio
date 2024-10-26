@@ -1,1 +1,1 @@
-my oersonal website
+my personal website

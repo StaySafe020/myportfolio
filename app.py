@@ -19,7 +19,7 @@ def web_portfolio():
         unsafe_allow_html=True
     )
 
-    # Load and display image in a circle with border and proper sizing
+    # Load and display image in a circle with proper sizing
     with open("image.jpg", "rb") as image_file:
         encoded_image = b64encode(image_file.read()).decode()
 
@@ -35,9 +35,10 @@ def web_portfolio():
                 display: block;
             }}
 
-            .social-icon-container {{
-                text-align: center;  /* Center icons horizontally */
-                margin-top: 20px;  /* Add some space between image and icons */
+            .social-icons {{
+                display: flex;
+                justify-content: center;  /* Center icons horizontally */
+                margin-top: 20px;  /* Add space between image and icons */
             }}
 
             .social-icon {{
@@ -51,29 +52,49 @@ def web_portfolio():
             <img class="profile-image" src="data:image/jpeg;base64,{encoded_image}" alt="Jambong Ralpher">
         </div>
 
-        <div class="social-icon-container">
-            """,
+        <div class="social-icons">
+        """,
         unsafe_allow_html=True
     )
 
-    # Social icons section with improved formatting and links under images (without text)
+    # Social icons 
     social_icons = {
-        "linkedin": ["https://www.linkedin.com/in/jambong-ralpher/", "https://cdn-icons-png.flaticon.com/512/174/275874.png"],
+        #"linkedin": ["https://www.linkedin.com/in/jambong-ralpher/", "https://cdn-icons-png.flaticon.com/512/174/275874.png"],
         "github": ["https://github.com/jambongRalpher", "https://cdn-icons-png.flaticon.com/128/3291/3291695.png"],
         "gmail": ["jambongralpher@gmail.com", "https://cdn-icons-png.flaticon.com/128/3178/3178158.png"]
     }
 
-    for platform, (link, icon_url) in social_icons.items():
-        st.write(
-            f"""
-            <a href="{link}" target="_blank">
-                <img class="social-icon" src="{icon_url}" alt="{platform}">
-            </a>
-            """,
-            unsafe_allow_html=True
-        )
+    social_icons = [
+    f"<a href='{social_icons[platform][0]}' target='_blank' style='margin-right: 10px;'>"
+    f"<img class='social-icon' src='{social_icons[platform][1]}' alt='{platform}'"
+    f" style='width: 25px; height: 25px;'></a>"
+    for platform in social_icons
+]
+    st.write(f"""
+    <div style="display: flex; justify-content: center; margin-bottom: 20px;">
+    {''.join(social_icons)}
+    </div>""", 
+    unsafe_allow_html=True)
 
-    st.markdown("</div>", unsafe_allow_html=True)  # Close the social-icon-container div
+    st.write("##")
+
+      # About Me 
+    st.subheader("About Me")
+
+    st.markdown("""
+    - 🧑‍💻 I am a third year **Computer Science student** at RHIBMS Buea, [RHIBMS](https://www.rhibms.org)
+    where I am currently studying  software engineerng.
+    - 🚀 I am also currently an intern at outreachy [outreachy](https://www.outreachy.com).
+    - ❤️ I am passionate about *cloud computing, distributed systems, python, Software Engineering, 
+    Computer Vision, Data structure and algorithms, Automation*, and more!
+    - 🏂 In my free time, I enjoy reading.
+    - 🏠 Based in cameroon.
+    """)
+
+    st.write("##")
+
+
+    
 
 if __name__ == "__main__":
     web_portfolio()

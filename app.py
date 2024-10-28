@@ -10,7 +10,7 @@ def web_portfolio():
     st.write(
         f"""
         <div class="title" style="text-align: center;">
-            <span style="font-size: 32px;">Hello! My name is Jambong Ralpher </span>
+            <span style="font-size: 32px;">Hello! My name is Jambong Ralpher  </span>
         </div>
         <div style="text-align: center;">
             <span style="font-size: 18px;">Software Engineering Student</span>
@@ -60,7 +60,7 @@ def web_portfolio():
     # Social icons 
     social_icons = {
         #"linkedin": ["https://www.linkedin.com/in/jambong-ralpher/", "https://cdn-icons-png.flaticon.com/512/174/275874.png"],
-        "github": ["https://github.com/jambongRalpher", "https://cdn-icons-png.flaticon.com/128/3291/3291695.png"],
+        "github": ["https://github.com/Jambong-Ralpher", "https://cdn-icons-png.flaticon.com/128/3291/3291695.png"],
         "gmail": ["jambongralpher@gmail.com", "https://cdn-icons-png.flaticon.com/128/3178/3178158.png"]
     }
 
@@ -93,6 +93,12 @@ def web_portfolio():
 
     st.write("##")
 
+
+
+    ## Download CV section
+    if st.button("Download CV"):
+            with open("profile.pdf", "rb") as file:
+                st.download_button("Download CV", file.read(), file_name="profile.pdf"),
 
     
 

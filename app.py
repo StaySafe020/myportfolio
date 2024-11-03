@@ -59,9 +59,9 @@ def web_portfolio():
 
     # Social icons 
     social_icons = {
-        #"linkedin": ["https://www.linkedin.com/in/jambong-ralpher/", "https://cdn-icons-png.flaticon.com/512/174/275874.png"],
-        "github": ["https://github.com/Jambong-Ralpher", "https://cdn-icons-png.flaticon.com/128/3291/3291695.png"],
-        "gmail": ["jambongralpher@gmail.com", "https://cdn-icons-png.flaticon.com/128/3178/3178158.png"]
+        "linkedin": ["https://www.linkedin.com/in/jambong-ralpher/", "https://cdn-icons-png.flaticon.com/128/3536/3536505.png"],
+        "github": ["https://github.com/Jambong-Ralpher", "https://cdn-icons-png.flaticon.com/128/733/733553.png"],
+        "twitter(x)": ["https://x.com/JRalpher59117", "https://cdn-icons-png.flaticon.com/128/5968/5968958.png"]
     }
 
     social_icons = [
@@ -100,6 +100,14 @@ def web_portfolio():
             with open("profile.pdf", "rb") as file:
                 st.download_button("Download CV", file.read(), file_name="profile.pdf"),
 
+    st.markdown(
+    """
+    <div style="margin-top: 20px; text-align: right; color: yellow;">
+        Have a wonderful day ⭐
+    </div>
+    """,
+    unsafe_allow_html=True
+)
     
 
 if __name__ == "__main__":

@@ -7,4 +7,4 @@ Built with streamlit....
 
 
 
-To run: stramlit run app.py
+To run locally: stramlit run app.py

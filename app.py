@@ -84,7 +84,7 @@ def web_portfolio():
     st.markdown("""
     - 🧑‍💻 I am a third year **Computer Science student** at RHIBMS Buea, [RHIBMS](https://www.rhibms.org)
     where I am currently studying  software engineerng.
-    - 🚀 I am also currently an intern at outreachy [outreachy](https://www.outreachy.com).
+    - 🚀 I am also currently studying cloud computing on [Azure and IBM].
     - ❤️ I am passionate about *cloud computing, distributed systems, python, Software Engineering, 
     Computer Vision, Data structure and algorithms, Automation*, and more!
     - 🏂 In my free time, I enjoy reading.

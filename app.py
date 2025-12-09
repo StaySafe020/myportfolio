@@ -12,7 +12,7 @@ def web_portfolio():
             <span style="font-size: 32px;">Hello! I am Jambong Ralpher</span>
         </div>
         <div style="text-align: center;">
-            <span style="font-size: 18px;">Software Engineering Student</span>
+           <span style="font-size: 18px;">Solana Blockchain Developer</span>
         </div>
         """,
         unsafe_allow_html=True
@@ -83,16 +83,11 @@ def web_portfolio():
     # About Me (Realistic, Simple, No Books)
     st.subheader("About Me")
     st.markdown("""
-    - 🧑‍💻 I’m a final-year **Software Engineering student** at RHIBMS in Cameroon, learning to build cool tech projects.
-    - 🚀 I’m working on:
-      - **Python**: Practicing data structures and algorithms on LeetCode and HackerRank (solving problems like arrays and strings).
-      - **Rust**: Learning basics like structs and ownership through online exercises.
-      - **JavaScript**: Building simple web apps and learning how websites work.
-      - **Go**: Exploring server-side coding and concurrency.
-      - **Ethical Hacking**: Studying network security with online platforms like TryHackMe.
-      - **AWS**: Training for the AWS Cloud Practitioner certification to learn cloud basics.
-    - ❤️ I love coding, automation, and creating secure systems.
-    - 🏠 I’m based in Cameroon.
+   - 🔭 I’m currently building **decentralized applications on the Solana blockchain**.
+- 🛠️ My Stack: **Rust** for on-chain programs, **Python** for tooling and automation, **Go** for backend services, and **JavaScript** for frontend interfaces.
+- 🌱 I’m deepening my expertise in **Rust's ownership model** and the **Solana programming model** to write secure, high-performance smart contracts.
+- 🎯 My focus is on building systems that are **unstoppable, transparent, and efficient**.
+- 📫 How to reach me: [jambongralpher@gmail.com]
     """)
 
     st.write("##")
@@ -100,11 +95,19 @@ def web_portfolio():
     # Projects
     st.subheader("Projects")
     st.markdown("""
-    - **Pyrustpipe** :
-      -PyRustPipe is a library for processing semi-structured data (e.g., JSON, YAML, CSV) with validation and transformation pipelines. 
-                It combines Python's ease of use for defining rules with Rust's speed for executing them.
-    - **Portfolio Website**:
-      - Built this website with Streamlit to share my coding journey.
+  **Discipline Tracker CLI | Python**
+- A command-line application that logs daily discipline metrics and calculates a weekly performance score.
+- Implements file I/O for data persistence and clean, functional code.
+- *[Link to GitHub Repository]*
+
+**Interactive Skills Manager | Python**
+- A terminal-based application for dynamically managing a programming skills list.
+- Features a persistent menu system with robust user input handling and error checking.
+- *[Link to GitHub Repository]*
+
+**This Portfolio | Python, Streamlit**
+- Deployed a responsive web portfolio to showcase my projects and technical direction.
+- *[Link to this site's code on GitHub]*
     """)
 
     st.write("##")

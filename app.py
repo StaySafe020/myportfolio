@@ -80,7 +80,7 @@ def web_portfolio():
 
     st.write("##")
 
-    # About Me (Realistic, Simple, No Books)
+    # About Me 
     st.subheader("About Me")
     st.markdown("""
    - 🔭 I’m currently building **decentralized applications on the Solana blockchain**.
@@ -95,27 +95,15 @@ def web_portfolio():
     # Projects
     st.subheader("Projects")
     st.markdown("""
-  **Discipline Tracker CLI | Python**
-- A command-line application that logs daily discipline metrics and calculates a weekly performance score.
-- Implements file I/O for data persistence and clean, functional code.
-- *[Link to GitHub Repository]*
-
-**Interactive Skills Manager | Python**
-- A terminal-based application for dynamically managing a programming skills list.
-- Features a persistent menu system with robust user input handling and error checking.
-- *[Link to GitHub Repository]*
-
-**This Portfolio | Python, Streamlit**
-- Deployed a responsive web portfolio to showcase my projects and technical direction.
-- *[Link to this site's code on GitHub]*
+  - ** Check out my GitHub for projects!** 
     """)
 
     st.write("##")
 
     # Download CV
     try:
-        with open("profile.pdf", "rb") as file:
-            st.download_button("Download CV", file.read(), file_name="profile.pdf", key="download_cv")
+        with open("Jambong ralpher main cv.pdf", "rb") as file:
+            st.download_button("Download CV", file.read(), file_name="Jambong ralpher main cv.pdf", key="download_cv")
     except FileNotFoundError:
         st.warning("CV file not found. Please create profile.pdf.")
 
